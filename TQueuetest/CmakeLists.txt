@@ -1,0 +1,4 @@
+file(GLOB srcs "*.cpp")
+
+add_executable(${TQueuetest} ${srcs} ${hdrs})
+target_link_libraries(${TQueuetest} ${TQueuetestlib} gtest)

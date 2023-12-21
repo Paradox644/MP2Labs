@@ -1,0 +1,4 @@
+file(GLOB srcs "*.cpp")
+
+add_executable(${TStacktest} ${srcs} ${hdrs})
+target_link_libraries(${TStacktest} ${TStacktestlib} gtest)
