@@ -1,0 +1,4 @@
+file(GLOB srcs "*.cpp")
+
+add_executable(${Postfixtest} ${srcs} ${hdrs})
+target_link_libraries(${Postfixtest} ${Postfixtestlib} gtest)

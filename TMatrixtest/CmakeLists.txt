@@ -1,0 +1,4 @@
+file(GLOB srcs "*.cpp")
+
+add_executable(${TMatrixtest} ${srcs} ${hdrs})
+target_link_libraries(${TMatrixtest} ${TMatrixtestlib} gtest)

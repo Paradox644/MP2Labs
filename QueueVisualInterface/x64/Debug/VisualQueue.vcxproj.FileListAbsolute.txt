@@ -1,0 +1,9 @@
+C:\Users\User\Documents\GitHub\AlgorithmsAndDataStructures\VisualQueue\x64\Debug\VisualQueue.vcxproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\AlgorithmsAndDataStructures\VisualQueue\x64\Debug\VisualQueue.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\User\Documents\GitHub\AlgorithmsAndDataStructures\VisualQueue\x64\Debug\VisualQueue.VQueue.resources
+C:\Users\User\Documents\GitHub\AlgorithmsAndDataStructures\VisualQueue\x64\Debug\VisualQueue.vcxproj.GenerateResource.cache
+C:\Users\User\Documents\GitHub\AlgorithmsAndDataStructures\VisualQueue\x64\Debug\VisualQueue.exe
+C:\Users\Paradox\source\repos\AlgorithmsAndDataStructures\VisualQueue\x64\Debug\VisualQueue.vcxproj.AssemblyReference.cache
+C:\Users\Paradox\source\repos\AlgorithmsAndDataStructures\VisualQueue\x64\Debug\VisualQueue.VQueue.resources
+C:\Users\Paradox\source\repos\AlgorithmsAndDataStructures\VisualQueue\x64\Debug\VisualQueue.vcxproj.GenerateResource.cache
+C:\Users\Paradox\source\repos\AlgorithmsAndDataStructures\VisualQueue\x64\Debug\VisualQueue.exe

@@ -1,0 +1,5 @@
+C:\Users\Paradox\source\repos\QueueVisualInterface\QueueVisualInterface\x64\Debug\QueueVisualInterface.vcxproj.AssemblyReference.cache
+C:\Users\Paradox\source\repos\AlgorithmsAndDataStructures\VisualQueue\x64\Debug\QueueVisualInterface.vcxproj.AssemblyReference.cache
+C:\Users\Paradox\source\repos\AlgorithmsAndDataStructures\QueueVisualInterface\x64\Debug\QueueVisualInterface.vcxproj.AssemblyReference.cache
+C:\Users\Paradox\source\repos\AlgorithmsAndDataStructures\QueueVisualInterface\x64\Debug\QueueVisualInterface.QueueForm.resources
+C:\Users\Paradox\source\repos\AlgorithmsAndDataStructures\QueueVisualInterface\x64\Debug\QueueVisualInterface.vcxproj.GenerateResource.cache

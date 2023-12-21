@@ -1,0 +1,18 @@
+﻿  VQueue.cpp
+C:\Users\Paradox\source\repos\AlgorithmsAndDataStructures\VisualQueue\VQueue.h(510,44): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'VQueue.cpp')
+  
+C:\Users\Paradox\source\repos\AlgorithmsAndDataStructures\VisualQueue\VQueue.h(510,37): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'VQueue.cpp')
+  
+C:\Users\Paradox\source\repos\AlgorithmsAndDataStructures\VisualQueue\VQueue.h(510,30): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'VQueue.cpp')
+  
+C:\Users\Paradox\source\repos\AlgorithmsAndDataStructures\VisualQueue\VQueue.h(510,24): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'VQueue.cpp')
+  
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Generating Code...
+C:\Users\Paradox\source\repos\AlgorithmsAndDataStructures\VisualQueue\VQueue.h(486): warning C4700: uninitialized local variable 'i' used
+  VQueue.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  VisualQueue.vcxproj -> C:\Users\Paradox\source\repos\AlgorithmsAndDataStructures\Build\x64\Debug\VisualQueue.exe

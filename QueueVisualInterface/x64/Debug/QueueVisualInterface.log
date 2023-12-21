@@ -1,0 +1,17 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (VisualQueue.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  MainForm.cpp
+C:\Users\Paradox\source\repos\AlgorithmsAndDataStructures\QueueVisualInterface\QueueForm.h(497,61): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'MainForm.cpp')
+  
+C:\Users\Paradox\source\repos\AlgorithmsAndDataStructures\QueueVisualInterface\QueueForm.h(497,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'MainForm.cpp')
+  
+C:\Users\Paradox\source\repos\AlgorithmsAndDataStructures\QueueVisualInterface\QueueForm.h(497,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'MainForm.cpp')
+  
+C:\Users\Paradox\source\repos\AlgorithmsAndDataStructures\QueueVisualInterface\QueueForm.h(497,41): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'MainForm.cpp')
+  
+C:\Users\Paradox\source\repos\AlgorithmsAndDataStructures\QueueVisualInterface\QueueForm.h(473): warning C4700: uninitialized local variable 'i' used
+  MainForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  QueueVisualInterface.vcxproj -> C:\Users\Paradox\source\repos\AlgorithmsAndDataStructures\Build\x64\Debug\QueueVisualInterface.exe
