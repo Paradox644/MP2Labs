@@ -32,12 +32,12 @@ template<class T>
 class TList
 {
 protected:
-	TNode<T>* pFirst; 
-	TNode<T>* pLast; 
-	TNode<T>* pCurrent; 
-	TNode<T>* pPrevious; 
-	TNode<T>* pStop; 
-	int length; 
+	TNode<T>* pFirst;
+	TNode<T>* pLast;
+	TNode<T>* pCurrent;
+	TNode<T>* pPrevious;
+	TNode<T>* pStop;
+	int length;
 
 public:
 
@@ -45,16 +45,23 @@ public:
 	~TList();
 	TList(const TList<T>& l);
 	int GetLength() { return length; }
-	bool IsEmpty() { return pFirst == nullptr; } 
-	void InsertFirst(T item); 
-	void InsertCurrent(T item); 
-	void InsertNextCurrent(T item); 
-	void InsertLast(T item);  
-	void DeleteFirst(); 
-	void DeleteCurrent(); 
+	bool IsEmpty() { return pFirst == nullptr; }
+
+	void InsertFirst(T item);
+	void InsertCurrent(T item);
+	void InsertNextCurrent(T item);
+	void InsertLast(T item);
+
+	void DeleteFirst();
+	void DeleteCurrent();
+
+
+
 	void GoNext();
-	void Reset(); 
-	bool IsEnd(); 
+
+	void Reset();
+	bool IsEnd();
+
 	T GetCurrentItem();
 	TNode<T>* GetCurrentItemPointer();
 	void SetCurrentItem(T item) { pCurrent->value = item; }
@@ -105,6 +112,7 @@ inline TList<T>::TList(const TList<T>& other)
 template<class T>
 TList<T>& TList<T>::operator=(const TList<T>& other)
 {
+	//if (this == other) return *this;
 	TNode<T>* otherptr = other.pFirst;
 	if (other.pFirst != nullptr) {
 		pFirst = new TNode<T>(other);
@@ -166,7 +174,7 @@ template <class T>
 void TList<T>::InsertFirst(T item)
 {
 	TNode<T>* newNode = new TNode<T>(item);
-	if (pFirst == nullptr) { 
+	if (pFirst == nullptr) {
 		pStop = new TNode<T>;
 		pFirst = newNode;
 		pLast = newNode;
@@ -240,7 +248,7 @@ void TList<T>::DeleteFirst()
 	}
 	TNode<T>* temp = pFirst;
 	pFirst = pFirst->GetPointer();
-	delete temp; 
+	delete temp;
 	if (pFirst == nullptr) {
 		pStop = nullptr;
 		pLast = nullptr;
@@ -299,7 +307,7 @@ void TList<T>::Reset()
 template <class T>
 void TList<T>::GoNext()
 {
-	if (IsEmpty()) throw "List is empty";
+	if (IsEmpty()) throw "SimplyList is empty";
 	if (IsEnd()) throw "There is no elements to go to";
 	pPrevious = pCurrent;
 	pCurrent = pCurrent->GetPointer();

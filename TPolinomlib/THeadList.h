@@ -1,6 +1,5 @@
 #pragma once
 #include "TList.h"
-
 using namespace std;
 
 
@@ -8,7 +7,7 @@ template<class T>
 class THeadList : public TList<T>
 {
 protected:
-	TNode<T>* pHead;
+	TNode<T>* pHead;  
 public:
 	THeadList();
 	~THeadList() {}
@@ -40,7 +39,7 @@ void THeadList<T>::InsertFirst(T item)
 template <class T>
 void THeadList<T>::DeleteFirst()
 {
-	if (this->pFirst == nullptr) throw "You are trying to delete an element from an empty list";
+	if (this->pFirst == nullptr) throw "You are trying to delete element from an empty list";
 	TNode<T>* temp = this->pFirst;
 	this->pFirst = this->pFirst.GetPointer();
 	delete temp;

@@ -15,17 +15,17 @@ const int precision = 4;
 class TPolinom : public THeadList<TMonom>
 {
 public:
-	TPolinom(); 
-	TPolinom(TPolinom& other); 
+	TPolinom(); //
+	TPolinom(TPolinom& other); //
 	TPolinom(TDynamicVector<TMonom> vec);
-	TPolinom(string str); 
+	TPolinom(string str); // ---
 	TPolinom& operator=(TPolinom& other); //
 	TPolinom& operator+(TPolinom& q); //
 
 
 	void AddMonom(TMonom newMonom); //
 	TPolinom MultMonom(TMonom monom); // ---
-	TPolinom AddPolinom(TPolinom& other); //
+	TPolinom AddPolinom(TPolinom& polinom, TPolinom& other); //
 	TPolinom operator*(double coef); //
 	TPolinom operator* (TPolinom& other);
 	bool operator==(TPolinom& other); //
@@ -170,24 +170,21 @@ TPolinom TPolinom::MultMonom(TMonom monom)
 	return *this;
 }
 
-TPolinom& TPolinom::operator+(TPolinom& other)
-{
-	TPolinom res(*this);
-	res.AddPolinom(other);
-	return res;
-}
+//TPolinom& TPolinom::operator+(TPolinom& other)
+//{
+//}
 
-TPolinom TPolinom::AddPolinom(TPolinom& other)
+TPolinom TPolinom::AddPolinom(TPolinom& polinom, TPolinom& other)
 {
-	TPolinom res(*this);
+//	TPolinom res(*this);
 	other.Reset();
 	this->Reset();
 	for (size_t i = 0; i < other.GetLength(); i++) {
 		TMonom m = other.GetCurrentItem();
-		res.AddMonom(m);
+		polinom.AddMonom(m);
 		if (i != other.GetLength() - 1) other.GoNext();
 	}
-	return res;
+	return polinom;
 }
 
 TPolinom TPolinom::operator*(double _coef)
@@ -212,6 +209,20 @@ TPolinom TPolinom::operator*(double _coef)
 
 TPolinom TPolinom::operator*(TPolinom& other)
 {
+	/*if (this->GetLength() != other.GetLength()) throw "Not equal polinomials length, can't mult them";
+	TPolinom res;
+	TNode<TMonom>* tm = pFirst;
+	TNode<TMonom>* om = other.pFirst;
+	while (tm != pHead) {
+		while (om != pHead) {
+			TMonom m = tm->value * om->value;
+
+			res.AddMonom(m);
+			om = om->GetPointer();
+		}
+		tm = tm->GetPointer();
+		tm = tm->GetPointer();
+	}*/
 	return *this;
 }
 
